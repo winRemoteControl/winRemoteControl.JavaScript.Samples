@@ -1,8 +1,10 @@
 ﻿/*
  * winRemoteControl - Hello World
  */
- 
-// Create a button PrintHelloWorld in the remote
+
+/**
+ * PrintHelloWorld Create a button PrintHelloWorld in the remote
+ */
 function PrintHelloWorld() {
 
     this.Type   = "Button";            // Optional Control Type
@@ -17,18 +19,25 @@ function PrintHelloWorld() {
         return true;
     }
 }
-// Create a label in the remote
+
+/**
+ * Label1 Create a label in the remote
+ */
 function Label1() {
 
     this.Type = "Label";
     this.Text = "Ready...";
 }
 
-// Remote Implementation
+/**
+ * Remote Remote Implementation
+ */
 function Remote() {
 
     this.initialize = function() {
+
         this.Actions = {
+
             PrintHelloWorld : PrintHelloWorld,
             Label1     		: Label1,
         }
