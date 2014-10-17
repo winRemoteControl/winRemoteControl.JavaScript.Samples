@@ -39,7 +39,7 @@ function Remote() {
         this.Actions = {
 
             PrintHelloWorld : PrintHelloWorld,
-            Label1     		: Label1,
+            Label1          : Label1,
         }
         this.Text              = "My Hello World"; // Remote Text
         this.ControlGap        = 60;
