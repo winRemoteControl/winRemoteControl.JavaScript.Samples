@@ -21,7 +21,7 @@ function PrintHelloWorld() {
 }
 
 /**
- * Label1 Create a label in the remote
+ * Label1 Create a first label in the remote
  */
 function Label1() {
 
