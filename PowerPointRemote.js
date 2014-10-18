@@ -8,7 +8,7 @@ var Color1      = '#10518E';
 function Previous() {
 
     this.Text              = "<< Previous";
-    this.BackgroundColor    = Color1;
+    this.BackgroundColor   = Color1;
     this.run = function() {
         this.sendKeys("{LEFT}");
         return true;
