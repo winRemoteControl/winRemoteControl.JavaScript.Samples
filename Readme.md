@@ -2,7 +2,7 @@
 
 ## Overview
 
-[Introducing winRemoteControl ](http://winremotecontrol.blogspot.com/2014/10/introducing-winremotecontrol.html "").
+[Introducing winRemoteControl ](http://winremotecontrol.blogspot.com/2014/10/introducing-winremotecontrol.html)
 
 ## Samples
 
