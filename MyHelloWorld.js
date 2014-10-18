@@ -14,7 +14,7 @@ function PrintHelloWorld() {
     this.run = function() { // Executed when the button is touched
 
         var msg = "Hello World!";
-        this.notify( msg, new Date());
+        this.notify(msg, new Date());
         this.getLabel1().setText(msg);
         return true;
     }
