@@ -1,4 +1,4 @@
-/*+++
+/*
     # winRemoteControl Samples
 
     ## winRemoteControl integration with the Open Weather Map Api
