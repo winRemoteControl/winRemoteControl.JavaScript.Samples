@@ -1,4 +1,4 @@
-/*
+/*+++
     # winRemoteControl Samples
 
     ## winRemoteControl integration with the Open Weather Map Api
@@ -71,7 +71,7 @@ function OpenWeatherMap() {
  * OpenWeatherMap_GetWeather
  * Class implementing the Get Weather Button
  */
-function OpenWeatherMap_GetWeather() {
+function GetWeatherButton() {
 
     this.Text   = "Get Weather";
     this.Height = 60;
@@ -130,7 +130,7 @@ function Remote() {
         this.ControlYStart  = 100;
         this.ControlGap     = 30;
         this.Actions = {
-            OpenWeatherMap_GetWeather : OpenWeatherMap_GetWeather,
+            GetWeatherButton : GetWeatherButton,
             Label1 : Label1,
             Label2 : Label2,
         };
