@@ -2,14 +2,11 @@
     # winRemoteControl Samples
 
     ## winRemoteControl integration with the Open Weather Map Api
-
-    ### Documentation:
-
+        Api Reference
         http://openweathermap.org/current
         http://openweathermap.org/weather-data#current
 
     ### Http get samples:
-
         http://api.openweathermap.org/data/2.5/weather?q=boston,Ma,USA
         http://api.openweathermap.org/data/2.5/weather?q=New%20York,NY,USA
 */
@@ -42,8 +39,7 @@ function OpenWeatherMap() {
     * @param {String} country The country
     */
     this.getWeather = function(actionInstance, city, state, country) {
-        var 
-            url;
+        var url;
 
         if(state)
             url = "{0}{1},{2},{3}".format(OPEN_WEATHER_MAP_URL_API, city, state, country);
@@ -52,10 +48,11 @@ function OpenWeatherMap() {
 
         var httpResult = actionInstance.httpGet(url);
         if(httpResult.Ok) {
+
             var data = JSON.parse(httpResult.Text); // Turn the result from the json api result into an object
-            if(data.weather) {
-                // Convert temperature in Celsius
-                data.main.temp     = ToCelsius(data.main.temp);
+            if(data.weather) {                
+                
+                data.main.temp     = ToCelsius(data.main.temp);  // Convert temperature in Celsius
                 data.main.temp_min = ToCelsius(data.main.temp_min);
                 data.main.temp_max = ToCelsius(data.main.temp_max);
                 return data;
